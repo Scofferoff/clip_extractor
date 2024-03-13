@@ -7,20 +7,20 @@ import random
 import subprocess
 import re
 
-clip_length = 3
+clip_length = 3 # Seconds for each clip
+clip_range = 6 # Number of clips
 
 pattern = r"S\d{2}E\d{2}" # Filenames need to contain Season and Episode e.g. S05E01 
 
 def generate_random_times(duration):
     times = []
-    for _ in range(6):
+    for _ in range(clip_range):
         random_time = random.randint(60, int(duration) - 60)  # Ignore first and last minute
         times.append(random_time)
     times.sort()
     return times
 
 def extract_episode(filename):
-    pattern = r"S\d{2}E\d{2}"
     match = re.search(pattern, filename)
     if match:
         return match.group()
