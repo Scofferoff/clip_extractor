@@ -21,3 +21,10 @@ Edit the regex pattern. e.g files with names containing episode numbers: S01E20 
 The regex pattern is overlayed on the output video.
 
 In the absence of any match the full filename is used. (may be clipped)
+
+Result from Family Guy Episode. Every run would result in different output:
+
+
+
+https://github.com/Scofferoff/clip_extractor/assets/12169861/07946108-3406-41dc-b7b6-9ed621056241
+
