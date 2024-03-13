@@ -1,7 +1,9 @@
 # Clip Extractor
 
 **Depends:** 
+
 pip moviepy
+
 sudo apt install ffmpeg ImageMagick
 
 **Usage:** ./clip_videos.sh /path/to/dir
